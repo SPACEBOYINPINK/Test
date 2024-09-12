@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+#header {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.logo.highlight {
+    color: #ff5722;
+    font-weight: 800;
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height:5px;
+    background-color: #ff5722;
+    margin-top: 5px;
+}
+
+
+.logo:hover {
+    color:#ff5722;
+    cursor: pointer;
+}
+
+.logo:hover::after{
+    background-color: #1e1e1e;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #ff5722;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ff5722;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero{
+    background-image: url('images/newsletterbackgroundaltered.jpg');
+    background-color: #bd4c2a;
+    height: 90vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#hero h4{
+    color:#f8f8f8;
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: #ff5722;
+}
+
+#hero h2{
+    color: #ccc;
+}
+
+#hero p{
+    color: #f7efef;
+}
+#hero button{
+    background: linear-gradient(135deg, #ff5722 0%, #ff8a50 100%);
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 900;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: o 10px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+#hero button:hover {
+    background: linear-gradient(135deg, #ff8a50 0% #ff5722 100%);
+    transform: translate(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#hero button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: width 0.4s ease;
+}
+
+#hero button:hover::before {
+    width: 100%;
+}
+
+#feature .fe-box img {
+    width: 300px; /* Shrinks the image to 300px wide */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 5px; /* Optional: rounds the image corners slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-text {
+    font-size: 48px; /* Significantly increased font size */
+    color: #333;
+    text-align: center;
+    margin-top: 20px; 
+    font-weight: 700; /* Maintains boldness */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+
+/* Banner section styling */
+#banner {
+    background-color: #f57c00; /* Orange background, adjust to match your theme */
+    color: #fff; /* White text for contrast */
+    padding: 60px 20px; /* Adds padding to the banner */
+    text-align: center; /* Centers the text */
+    margin-top: 40px; /* Adds space above the banner, under the feature */
+}
+
+#banner h2 {
+    font-size: 48px; /* Big, bold headline */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#banner p {
+    color: #f8f5f5;
+    font-size: 20px; /* Text size for the paragraph */
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.banner-btn {
+    display: inline-block;
+    background-color: #fff; /* White button with orange text */
+    color: #f57c00;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase; /* Makes the text all uppercase */
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline from the link */
+    transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+    color: #fff; /* White text on hover */
+}
+
+#banner {
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Newsletter section styling */
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("images/newsletterbackgroundaltered.jpg"); /* Background image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: 20% 30%; /* Position of the background image */
+    background-color: #1e1e1e; /* Dark background color */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center align the text */
+    color: #fff; /* White text color for contrast */
+    margin-top: 60px; /* Space from the section above */
+}
+
+#newsletter .newstext {
+    margin-bottom: 20px; /* Space between the text and the form */
+}
+
+#newsletter h4 {
+    font-size: 24px; /* Size of the heading */
+    color: #fff; /* White color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+#newsletter p {
+    font-size: 16px; /* Size of the paragraph text */
+    color: #ccc; /* Light grey color for the text */
+}
+
+#newsletter span {
+    color: #f57c00; /* Highlight color for part of the text */
+}
+
+#newsletter .form {
+    display: flex; /* Align form elements horizontally */
+    justify-content: center; /* Center the form within the section */
+    gap: 10px; /* Space between input and button */
+}
+
+#newsletter input[type="text"] {
+    padding: 10px; /* Space inside the input field */
+    font-size: 16px; /* Font size inside the input */
+    border: 1px solid #ddd; /* Border color and style */
+    border-radius: 5px; /* Rounded corners for the input field */
+    width: 300px; /* Width of the input field */
+}
+
+#newsletter button {
+    padding: 10px 20px; /* Space inside the button */
+    font-size: 16px; /* Font size inside the button */
+    background-color: #f57c00; /* Background color for the button */
+    color: #fff; /* Text color for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Make the button text bold */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#newsletter button:hover {
+    background-color: #e67e22; /* Darker color on hover */
+}
+
+/* Footer general styling */
+footer {
+    background-color: #1e1e1e; /* Dark background color */
+    color: #fff; /* White text color for contrast */
+    padding: 40px 20px; /* Padding inside the footer */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between the columns */
+    flex-wrap: wrap; /* Wrap the columns on smaller screens */
+}
+
+footer .col {
+    flex: 1; /* Equal width columns */
+    margin-bottom: 20px; /* Space at the bottom of each column */
+}
+
+footer h4 {
+    font-size: 18px; /* Size for section headings */
+    color: #f57c00; /* Orange color for section headings */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+footer p {
+    font-size: 14px; /* Paragraph text size */
+    line-height: 1.6; /* Line height for readability */
+}
+
+footer a {
+    display: block; /* Each link on a new line */
+    color: #fff; /* White link color */
+    font-size: 14px; /* Font size for links */
+    margin-bottom: 8px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+footer a:hover {
+    color: #f57c00; /* Hover effect for links */
+}
+
+footer .copyright {
+    width: 100%; /* Full width for copyright section */
+    text-align: center; /* Center align the text */
+    margin-top: 20px; /* Space above the copyright text */
+    font-size: 12px; /* Smaller text size */
+    color: #ccc; /* Light grey color */
+}
+
