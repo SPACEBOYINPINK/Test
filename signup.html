@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - OnlyCars</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="signup.css"> <!-- If using a separate stylesheet for the sign-up page -->
+</head>
+<body>
+    <header>
+        <h1>OnlyCars</h1>
+        <!-- Add navigation links here if needed -->
+    </header>
+
+    <main>
+        <section id="sign-up">
+            <div class="form-container">
+                <h2>Create an Account</h2>
+                <form action="/signup" method="post">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="signin.html">Sign In</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+</body>
+</html>
