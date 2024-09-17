@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f57c00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.section-p1 {
+    padding: 60px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Order List Styling */
+.order-list {
+    margin-top: 40px;
+}
+
+.order-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-item h3 {
+    color: #333;
+    font-size: 1.8em;
+}
+
+.order-item p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.order-details h4 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.order-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-details ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.track-order {
+    padding: 10px 20px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.track-order:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

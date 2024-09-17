@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Pictures/my website images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Test"
+	}
+}

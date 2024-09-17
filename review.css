@@ -1,0 +1,108 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f57c00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.section-p1 {
+    padding: 60px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Customer Reviews */
+#customer-reviews .review {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#customer-reviews h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#customer-reviews p {
+    color: #777;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Submit Review Form */
+#submit-review form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#submit-review input, 
+#submit-review textarea, 
+#submit-review select, 
+#submit-review button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submit-review button {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-review button:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
